@@ -46,6 +46,12 @@ body {
     margin-top: 15px;
 }
 
+.homeCol {
+    height: 350px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
 
 /*-- for medium and small screens! --*/
 @media only screen and (max-width: 768px) {
@@ -63,6 +69,14 @@ body {
     margin-left: 60px;
     text-decoration: none;
     color:#1d4528;
+}
+
+.homeCol {
+    height: 160px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 0px;
 }
 }
 
