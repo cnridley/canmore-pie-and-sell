@@ -39,18 +39,28 @@ body {
     color:#1d4528;
 }
 /*-- home.html --*/
-.homeRow {
+.homeRow { /*-- makes the two colums 90% wide  --*/
     height: 100%;
     width: 90%;
     margin: auto;
     margin-top: 15px;
 }
 
-.homeCol {
+.homeCol { /*-- Edits the about us paragraph --*/
     height: 350px;
     font-size: 20px;
     text-align: center;
     padding-top: 50px;
+}
+
+.MadeInCanmoreRow {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 35px;
+    justify-content: center;
+    font-style: italic;
 }
 
 /*-- for medium and small screens! --*/
@@ -71,12 +81,22 @@ body {
     color:#1d4528;
 }
 
-.homeCol {
+.homeCol { /*-- Edits the about us paragraph --*/
     height: 160px;
     font-size: 10px;
     text-align: center;
     margin-bottom: 10px;
     padding-top: 0px;
+}
+
+.MadeInCanmoreRow {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 15px;
+    justify-content: center;
+    font-style: italic;
 }
 }
 
