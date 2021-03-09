@@ -1,0 +1,71 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-- BASE.HTML --*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;           /* Footer height */
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.logo { /*-- Canmore pie and sell logo in nav bar --*/
+    max-width: 220px;
+    max-height: 220px;
+    margin-left: 10px;
+}
+
+.navigation { /*-- centres the nav items --*/
+    margin: auto;
+} 
+
+.nav-link {/*-- increases font size of nav items and spaces them --*/
+    font-size: 35px;
+    margin-left: 60px;
+    text-decoration: none;
+    color:#1d4528;
+}
+
+.nav-link:hover{ /*-- changes hover color --*/
+    color: black;
+}
+
+
+.NavButton {/*-- Changes color of fa-lines and increases size. --*/
+    font-size: 20px;
+    color:#1d4528;
+}
+/*-- home.html --*/
+.homeRow {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+/*-- for medium and small screens! --*/
+@media only screen and (max-width: 768px) {
+    .logo {/*-- Canmore pie and sell logo in nav bar --*/
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 10px;
+}
+
+.nav-item {/*-- aligns the list items to the right on smaller screens. --*/
+    text-align: right;
+}
+.nav-link {/*-- increases font size of nav items and spaces them --*/
+    font-size: 15px;
+    margin-left: 60px;
+    text-decoration: none;
+    color:#1d4528;
+}
+}
+
+
+
+
