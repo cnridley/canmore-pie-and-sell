@@ -33,6 +33,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+   (function(){
+      emailjs.init("user_bU2ZgEMXPJg08JRj46nQ2");
+   })();
+</script>
+<script type="text/javascript">
+        window.onload = function() {
+            
+            const form = document.getElementById('contact-form')
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(form.reset());
+            });
+        }
+    </script>
     {% endblock %}
 
     {% block extra_js %}
@@ -59,7 +80,7 @@
         <a class="nav-link" href="{% url 'menu' %}"><span>&#8226;</span>Menu<span>&#8226;</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>&#8226;</span>Contact<span>&#8226;</span></a>
+        <a class="nav-link" href="{% url 'contact' %}"><span>&#8226;</span>Contact<span>&#8226;</span></a>
       </li>
     </ul>
   </div>
