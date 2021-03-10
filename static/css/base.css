@@ -73,6 +73,40 @@ body {
    margin-top: 15px;
 }
 
+/*-- menu.html --*/
+.menuRow {/*-- Edits the menu div --*/
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.pieName{ /*-- Edits the pie name font size --*/
+    font-size: 25px;
+}
+
+hr{
+    background-color: #1d4528;
+    height: 3px;
+    width: 80%;
+}
+
+.pie_desc {/*-- Edits the pie description font size --*/
+    font-size: 15px;
+}
+
+.pie_price {/*-- Edits the pie price font size --*/
+    font-size: 20px;
+}
+
+.InstaRow { /*-- Edits the perfecting recipe paragraph --*/
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+}
+
 /*-- for medium and small screens! --*/
 @media only screen and (max-width: 768px) {
     .logo {/*-- Canmore pie and sell logo in nav bar --*/
@@ -127,6 +161,42 @@ body {
 .imageRow{/*-- Edits the row holding the carousel images --*/
    text-align: center;
    margin-top: 15px;
+}
+/*-- MENU.HTML --*/
+.menuRow {/*-- Edits the menu div --*/
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.pieName{ /*-- Edits the pie name font size --*/
+    font-size: 18px;
+}
+
+hr{
+    background-color: #1d4528;
+    height: 3px;
+    width: 80%;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.pie_desc {/*-- Edits the pie description font size --*/
+    font-size: 10px;
+}
+
+.pie_price {/*-- Edits the pie price font size --*/
+    font-size: 12px;
+}
+
+.InstaRow { /*-- Edits the perfecting recipe paragraph --*/
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
 }
 }
 

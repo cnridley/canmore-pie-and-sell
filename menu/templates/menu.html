@@ -3,5 +3,20 @@
 {% load static %}
 
 {% block content %}
-MENU PAGE
+<div class="row container-fluid InstaRow">
+    <p>While we further perfect our secret recipe, <br>
+    we only have Peppered Steak & Mushroom available!<br>
+    <span>Follow us on <a href="https://www.instagram.com/canmorepieandsell/" target="_blank">Instagram </a>for updates!</span>
+    </p>
+</div>
+<hr>
+{% for P in pie %}
+<div class="row container-fluid menuRow">
+  <p><span class="pieName"><span>&#8226;</span>{{ P.pie_name }}<span>&#8226;</span> </span><br>
+    <span class="pie_desc"> {{ P.pie_description }}</span> <br>
+    <span class="pie_price">${{ P.pie_price }}</span> </p>
+</div>
+<hr>
+{% endfor %}
+
 {% endblock %}
