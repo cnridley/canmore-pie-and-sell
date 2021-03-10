@@ -8,14 +8,50 @@
 <div class="row align-items-center homeRow">
     <div class="col-md-8 order-md-2 homeCol">
         From our house of dad jokes and punny puns comes Canmore Pie & Sell. Bringing you a hearty slice of English fare.<br>
-        We're two expats living the Rocky Mountain dream ut every so often we miss that crisp all butter pastry drowned in 
-        grave from the local pub. <br>
-        I say 'we'; he does the spreadsheet and puns and I'm the one covered in flour! <br>
+        We're two expats living the Rocky Mountain dream but every so often we miss that crisp all butter pastry drowned in 
+        gravy from the local pub. <br>
+        I say 'we'; he does the spreadsheets and puns and I'm the one covered in flour! <br>
         I set about making my own all butter pastry a few years ago and haven't stopped.<br>
         We hope you love our pies as much as we do!
     </div>
-    <div class="col-md-4 order-md-1" style="background-color: bisque;">
-hello
+<div class="col-md-4 order-md-1 imageRow">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {% for G in gallery %}
+                {% if forloop.first %}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}" class="active"></li>
+                {% else %}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter0}}"></li>
+
+                {% endif %}
+            {% endfor %}
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+            {% for G in gallery %}
+                {% if forloop.first %}
+                    <div class="carousel-item active  ">
+                {% else %}
+                    <div class="carousel-item  ">
+                {% endif %}
+                <img class="CarouselImage" src="{{ G.image.url }}" alt="{{G.name}}">
+                </div>
+
+            {% endfor %}
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </div>
     </div>
 </div>
 </section>
