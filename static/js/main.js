@@ -1,6 +1,11 @@
-let checkbox = document.getElementById("Soldout");
-let cross = document.getElementById("Sold");
-
-if (checkbox.checked == true ) {
-    cross.removeAttribute('hidden')
-}
+$(document).ready(function(){
+   // Check or Uncheck All checkboxes
+   $("#Soldout").change(function(){
+     var checked = $(this).is(':checked');
+     if(checked){
+       $("#Sold").show();
+     }else{
+       $(".checkbox").hide();
+     }
+   );
+   });
