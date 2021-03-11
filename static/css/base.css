@@ -11,6 +11,12 @@ a:hover {
     color: black;
 }
 
+.soldOut {
+    position: absolute;
+    font-size: 100px;
+    color: red;
+}
+
 /*-- BASE.HTML --*/
 #footer {
   position: absolute;
@@ -70,6 +76,12 @@ a:hover {
     font-size: 35px;
     justify-content: center;
     font-style: italic;
+}
+
+.InstagramSymbol {/*-- Edits the instagram symbol --*/
+    margin: auto;
+    font-size: 35px;
+    justify-content: center;
 }
 
 .CarouselImage { /*-- Edits the carousel images --*/
@@ -177,6 +189,11 @@ hr{
     font-style: italic;
 }
 
+.InstagramSymbol {/*-- Edits the instagram symbol --*/
+    margin: auto;
+    font-size: 15px;
+    justify-content: center;
+}
 .CarouselImage { /*-- Edits the carousel images --*/
    width: 200px;
    height: 200px;
@@ -197,7 +214,7 @@ hr{
 }
 
 .pieName{ /*-- Edits the pie name font size --*/
-    font-size: 18px;
+    font-size: 12px;
 }
 
 hr{
@@ -220,7 +237,7 @@ hr{
     width: 80%;
     margin: auto;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     justify-content: center;
 }
 

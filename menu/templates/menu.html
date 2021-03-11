@@ -5,10 +5,8 @@
 {% block content %}
 <div class="row container-fluid InstaRow">
     <p>
-    <a href="{% url 'contact' %}">Click here to order!</a><br>
     While we further perfect our secret recipe, <br>
     we only have Peppered Steak & Mushroom available!<br>
-    
     <span>Follow us on <a href="https://www.instagram.com/canmorepieandsell/" target="_blank">Instagram </a>for updates!</span>
     </p>
 </div>
@@ -18,8 +16,18 @@
   <p><span class="pieName"><span>&#8226;</span>{{ P.pie_name }}<span>&#8226;</span> </span><br>
     <span class="pie_desc"> {{ P.pie_description }}</span> <br>
     <span class="pie_price">${{ P.pie_price }}</span> </p>
+    <i class="fas fa-times soldOut" id="Sold" hidden></i><br>
+    <form>
+        <input type="checkbox" id="Soldout" name="soldout">
+        <label id="test">Sold Out</label>
+    </form>
 </div>
 <hr>
-{% endfor %}
 
+{% endfor %}
+<div class="row container-fluid InstaRow">
+    <p>
+    <a href="{% url 'contact' %}">Click here to order!</a><br>
+    </p>
+</div>
 {% endblock %}

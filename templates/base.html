@@ -57,6 +57,7 @@
     {% endblock %}
 
     {% block extra_js %}
+    
     {% endblock %}
 
     <title>Canmore Pie & Sell{% block extra_title %}{% endblock %}</title>
@@ -97,6 +98,10 @@
 <footer id="footer">
     Designed and developed by C-Squared Web Development
 </footer>
+
+{% block postloadjs %}
+    <script src="{% static 'js/main.js' %}"></script>
+    {% endblock %}
 </body>
 
 </html>
