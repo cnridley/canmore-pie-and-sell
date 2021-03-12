@@ -1,11 +1,11 @@
-$(document).ready(function(){
+//$(document).ready(function(){
+//    $('.soldOut').hide();
    // Check or Uncheck All checkboxes
-   $("#Soldout").change(function(){
-     var checked = $(this).is(':checked');
-     if(checked){
-       $("#Sold").show();
-     }else{
-       $(".checkbox").hide();
-     }
-   );
-   });
+ //  $(".Sold").click(function(){
+   //     if ($(this).prop("checked") == true){
+  //      $('.soldOut').show();
+    //} else if ($(this).prop("checked") == false) {
+      //  $('.soldOut').hide();
+    //}
+    //});
+//});

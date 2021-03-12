@@ -15,6 +15,7 @@ a:hover {
     position: absolute;
     font-size: 100px;
     color: red;
+    display: none;
 }
 
 /*-- BASE.HTML --*/
