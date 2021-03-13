@@ -33,7 +33,7 @@
     <a href="{% url 'contact' %}">Click here to order!</a><br>
     </p>
 </div>
-{% if request.user.is_superuser %}
+{% if request.user.is_staff %}
 <div class="row container-fluid InstaRow">
 <form>
     <input type="checkbox" class="show" name="show">
