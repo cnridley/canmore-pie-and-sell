@@ -27,9 +27,18 @@
 <hr>
 
 {% endfor %}
+
 <div class="row container-fluid InstaRow">
-    <p>
+    <p id="Sold"> 
     <a href="{% url 'contact' %}">Click here to order!</a><br>
     </p>
 </div>
+{% if request.user.is_superuser %}
+<div class="row container-fluid InstaRow">
+<form>
+    <input type="checkbox" class="show" name="show">
+    <label id="show">show 'click here to order'</label>
+</form>
+</div>
+{% endif %}
 {% endblock %}
