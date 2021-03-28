@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['canmore-pie-and-sell.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['canmore-pie-and-sell.herokuapp.com', 'www.canmorepies.com', 'localhost', 'www.canmorepieandsell.com']
 
 
 # Application definition
